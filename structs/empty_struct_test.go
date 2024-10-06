@@ -22,7 +22,7 @@ func TestStructs(t *testing.T) {
 	students["李四"] = struct{}{}
 	fmt.Println(len(students))
 
-	teachers := make(chan struct{}, 0)
+	teachers := make(chan struct{})
 	go func() {
 		time.Sleep(3 * time.Second)
 		fmt.Println("子协程工作完毕")
